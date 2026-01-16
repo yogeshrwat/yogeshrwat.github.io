@@ -47,7 +47,7 @@ const ContactSection = () => {
                         </p>
 
                         <a
-                            href="mailto:rawatyogesh.dev@gmail.com"
+                            href="mailto:yogeshrawatdev@gmail.com"
                             className="group relative inline-flex items-center gap-6 px-16 py-8 bg-white text-black font-heading font-bold text-2xl uppercase tracking-tighter overflow-hidden transition-all duration-500 hover:scale-105"
                         >
                             <span className="relative z-10 transition-colors group-hover:text-white">Start Project</span>
@@ -59,14 +59,16 @@ const ContactSection = () => {
                     {/* Social Links Grid */}
                     <div className="mt-32 w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
                         {[
-                            { name: 'Github', icon: Github, link: '#' },
-                            { name: 'LinkedIn', icon: Linkedin, link: '#' },
+                            { name: 'Github', icon: Github, link: 'https://github.com/yogeshrwat' },
+                            { name: 'LinkedIn', icon: Linkedin, link: 'https://linkedin.com/in/yogesh-rawt' },
                             { name: 'Twitter', icon: Twitter, link: '#' },
                             { name: 'Portfolio', icon: Globe, link: '#' }
                         ].map((social, i) => (
                             <motion.a
                                 key={social.name}
                                 href={social.link}
+                                target={social.link.startsWith('http') ? "_blank" : undefined}
+                                rel={social.link.startsWith('http') ? "noopener noreferrer" : undefined}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.8 + (i * 0.1) }}

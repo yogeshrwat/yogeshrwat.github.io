@@ -17,14 +17,16 @@ const Footer = () => {
                 {/* Social Links */}
                 <div className="flex flex-wrap justify-center gap-6">
                     {[
-                        { icon: Github, link: '#', name: 'Github' },
-                        { icon: Linkedin, link: '#', name: 'LinkedIn' },
+                        { icon: Github, link: 'https://github.com/yogeshrwat', name: 'Github' },
+                        { icon: Linkedin, link: 'https://linkedin.com/in/yogesh-rawt', name: 'LinkedIn' },
                         { icon: Twitter, link: '#', name: 'Twitter' },
-                        { icon: Mail, link: 'mailto:rawatyogesh.dev@gmail.com', name: 'Email' }
+                        { icon: Mail, link: 'mailto:yogeshrawatdev@gmail.com', name: 'Email' }
                     ].map((social) => (
                         <a
                             key={social.name}
                             href={social.link}
+                            target={social.link.startsWith('http') ? "_blank" : undefined}
+                            rel={social.link.startsWith('http') ? "noopener noreferrer" : undefined}
                             className="w-14 h-14 rounded-2xl border border-white/5 bg-white/5 flex items-center justify-center text-white/30 hover:text-primary hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 group"
                             title={social.name}
                         >
