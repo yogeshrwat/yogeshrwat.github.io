@@ -24,10 +24,10 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
-                            className="relative w-full max-w-[600px] h-32 md:max-w-[1000px] md:h-48 mb-6"
+                            className="relative w-full max-w-[700px] h-40 md:max-w-[1100px] md:h-60 mb-6"
                         >
                             <Image
-                                src="/images/devlb.png"
+                                src="/images/astro-push.png"
                                 alt="Software Developer"
                                 fill
                                 className="object-contain object-left"
@@ -39,7 +39,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3 }}
-                            className="text-base md:text-lg text-gray-400 font-normal leading-relaxed tracking-normal max-w-xl font-sans -mt-6"
+                            className="text-base md:text-lg text-gray-400 font-normal leading-relaxed tracking-normal max-w-xl font-sans -mt-14"
                         >
                             I am a skilled frontend developer from India, having expertise in <span className="text-white font-medium bracket-base bracket-pink mx-1">JavaScript</span>, <span className="text-white font-medium bracket-base bracket-cyan mx-1">React</span>, <span className="text-white font-medium bracket-base bracket-pink mx-1">Flutter</span>, <span className="text-white font-medium bracket-base bracket-cyan mx-1">Next.js</span>, <span className="text-white font-medium bracket-base bracket-pink mx-1">Git</span>, and <span className="text-white font-medium bracket-base bracket-cyan mx-1">Tailwind CSS</span>.
                             I'm also familiar with <span className="text-white font-medium bracket-base bracket-pink mx-1">NodeJS</span>, <span className="text-white font-medium bracket-base bracket-cyan mx-1">TypeScript</span>, <span className="text-white font-medium bracket-base bracket-pink mx-1">Redux</span>, <span className="text-white font-medium bracket-base bracket-cyan mx-1">Rest API</span>, <span className="text-white font-medium bracket-base bracket-pink mx-1">Styled Components</span>, <span className="text-white font-medium bracket-base bracket-cyan mx-1">Bootstrap</span>, and many other libraries.
